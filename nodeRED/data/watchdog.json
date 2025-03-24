@@ -1,0 +1,238 @@
+[
+    {
+        "id": "8ec85a806274c80b",
+        "type": "tab",
+        "label": "WatchDog",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0402533d9522e241",
+        "type": "inject",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 100,
+        "wires": [
+            [
+                "f56ca00d05aa6c57"
+            ]
+        ]
+    },
+    {
+        "id": "f56ca00d05aa6c57",
+        "type": "function",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "func": "msg.payload = \"megaind 0 wdtr\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "d516f9642ea0fe3d"
+            ]
+        ]
+    },
+    {
+        "id": "3ba2032fe9a25e7f",
+        "type": "comment",
+        "z": "8ec85a806274c80b",
+        "name": "Pet the Dog here",
+        "info": "",
+        "x": 220,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d516f9642ea0fe3d",
+        "type": "debug",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "0b42ce3a504029fa",
+        "type": "delay",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 240,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9edcbde4107c55ac",
+        "type": "inject",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 160,
+        "wires": [
+            [
+                "686be7d846b534ce"
+            ]
+        ]
+    },
+    {
+        "id": "686be7d846b534ce",
+        "type": "delay",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "bc27c4066438e591"
+            ]
+        ]
+    },
+    {
+        "id": "bc27c4066438e591",
+        "type": "function",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "func": "msg.payload = \"rtd 0 wdtr\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "4969dc4f4b3a8e48"
+            ]
+        ]
+    },
+    {
+        "id": "4969dc4f4b3a8e48",
+        "type": "debug",
+        "z": "8ec85a806274c80b",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "fe7c2d3fe167a4ec",
+        "type": "exec",
+        "z": "8ec85a806274c80b",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SM IA WD pet here",
+        "x": 590,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "919a254140038d80",
+        "type": "exec",
+        "z": "8ec85a806274c80b",
+        "command": "",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "SM RTD WD pet here",
+        "x": 600,
+        "y": 160,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    }
+]

@@ -1,0 +1,36 @@
+################################################################################
+##   Sensor Routes
+################################################################################
+
+### Requests the current sensor Threshold values
+GET http://localhost:5000/sensors
+
+
+### Saves sensor Threshold values
+POST http://localhost:5000/sensors
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "rsvrOilTempMajorThreshold": 60,
+  "rsvrOilTempCriticalThreshold": 75,
+  "tankOilTempMajorThreshold": 45,
+  "tankOilTempCriticalThreshold": 55
+}
+
+
+### Requests the current state of the sensor alarms
+GET http://localhost:5000/sensors/alarms
+
+### Set all alarms to OFF state, used when restarting Machine
+GET http://localhost:5000/sensors/restart
+
+
+### Clear an individual Alarm
+POST http://localhost:5000/sensors/clear
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+    "clear": "rsvrOilTemp"
+}

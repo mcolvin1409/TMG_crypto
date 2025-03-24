@@ -1,0 +1,46 @@
+################################################################################
+##   System Routes
+################################################################################
+
+### Get the unit id (and any other properties TBD) 
+GET http://localhost:5000/system/props
+
+### Check 
+GET http://localhost:5000/system/health
+
+### Get current NTP Server
+GET http://localhost:5000/system/ntp/current
+
+### Set NTP Status
+POST http://localhost:5000/system/ntp/status/true
+
+### Set NTP Servers (Outputting Unrecognized Command)
+POST http://localhost:5000/system/ntp/servers HTTP/1.1
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "primary": "time-a-b.nist.gov",
+  "secondary": "time.nist.gov"
+}
+
+### Set DateTime and Timezone Manually
+POST http://localhost:5000/system/ntp/datetime HTTP/1.1
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "timezone": "America/Chicago",
+  "datetime": "2022-02-04 18:17:16"
+}
+
+### Get current NTP Server
+GET http://localhost:5000/system/fluids
+
+### Get current NTP Server
+POST http://localhost:5000/system/fluids HTTP/1.1
+content-type: application/json
+
+{
+  "fluid": "ENGINEERED_FLUIDS_BC_888"
+}

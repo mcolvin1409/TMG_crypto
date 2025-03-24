@@ -1,0 +1,33 @@
+################################################################################
+##   Auth Routes
+################################################################################
+
+### Set Password code
+POST http://localhost:5000/auth/initialize HTTP/1.1
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "password": "x54321"
+}
+
+#################################################################################
+### Update Password code
+POST http://localhost:5000/auth/change HTTP/1.1
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "currentPassword": "1245",
+  "newPassword": "1337"
+}
+
+#################################################################################
+### Validate Password code
+GET http://localhost:5000/auth HTTP/1.1
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "password": "x54321"
+}

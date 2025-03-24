@@ -1,0 +1,9 @@
+<svg id="Receptacle_C13_-_Icon" data-name="Receptacle C13 - Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104" height="72" viewBox="0 0 104 72">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6f4b"/>
+      <stop offset="1" stop-color="#d1363c"/>
+    </linearGradient>
+  </defs>
+  <path id="Subtraction_17" data-name="Subtraction 17" d="M150,63H62a8.009,8.009,0,0,1-8-8V18.314a7.951,7.951,0,0,1,2.343-5.657L75.657-6.657A7.951,7.951,0,0,1,81.314-9h49.372a8.055,8.055,0,0,1,5.657,2.343l19.314,19.314A7.948,7.948,0,0,1,158,18.314V55A8.009,8.009,0,0,1,150,63ZM130,25V49h12V25H130ZM70,25V49H82V25ZM100,5V29h12V5Z" transform="translate(-54 9)" fill="url(#linear-gradient)"/>
+</svg>

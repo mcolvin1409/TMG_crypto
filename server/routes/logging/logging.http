@@ -1,0 +1,19 @@
+################################################################################
+##   Networking Routes
+################################################################################
+
+### Log level information
+GET http://localhost:5000/logging/levels
+
+### Log an event
+POST http://localhost:5000/logging
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "topic": "audit",
+  "level": "WARN",
+  "priority": "critical",
+  "application": "vue.alarm.thresholds.oilLevelLow",
+  "message": "Something bad happened validating the Oil Level Threshold"
+}

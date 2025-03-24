@@ -1,0 +1,21 @@
+################################################################################
+##   Networking Routes
+################################################################################
+
+### System health data
+GET http://localhost:5000/network/settings
+
+### Update Network Settings
+POST http://localhost:5000/network/settings
+content-type: application/json
+# Authorization: Bearer xxx
+
+{
+  "settings": {
+    "dhcp": false,
+    "address": "99.36.3.176:3339/24",
+    "gateway": "192.168.1.12",
+    "dns1": "8.8.8.8",
+    "dns2": "1.1.1.1"
+  }
+}
