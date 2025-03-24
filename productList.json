@@ -1,0 +1,13 @@
+{
+    "OTTO600":          1,
+    "OTTO120":          2,
+    "OTTO60XE":         3,
+    "OTTO600TE":        4,
+    "EdgeBox 4.5":      5,
+    "EdgeBox 30":       6,
+    "EdgeBox 120":      7,
+    "CryptoCore PROTO": 8,
+    "CryptoCore 140":   9,
+    "CryptoCore 200":   10,
+    "ComputeCore":      11
+}
